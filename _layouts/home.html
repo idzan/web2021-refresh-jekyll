@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <!--Open Graph & Twitter Card-->
+    {% include open.html %}
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="shortcut icon" href="/favicon/icon.svg" type="image/svg+xml">
+    <!--Fonts Preload-->
+    {% include fonts.html %}
+</head>
+<body>
+    <header>
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="site__name">
+                <span class="site__title">Marko</span> <span class="site__title color__accent">Idžan</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <div class="subfooter">
+        <a class="top hide" id="to-top">
+            <svg class="icon icon__fill--top">
+                <title>To Top</title>
+                <use href="svg/icons.svg#to-top"></use>
+            </svg>
+            <span class="screen-reader" aria-hidden="true">Go To Top</span>
+            <span class="visually-hidden" aria-hidden="true">To Top</span>
+        </a>
+    </div>
+    <footer>
+        {% include social.html %}
+        {% include toggle.html %}
+        <div class="gdpr__links">
+            <p>
+                <a href="/privacy.html" class="link__internal">Privacy and Cookie Policy</a>
+                &nbsp;-&nbsp; 
+                <a href="/terms.html" class="link__internal">Terms of Service</a>
+            </p>
+        </div>
+        <div class="copyright__text">
+            <p>Copyright &copy; 2010 - 2021</p>
+        </div>
+    </footer>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

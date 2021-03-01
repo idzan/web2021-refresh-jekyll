@@ -1,53 +1,8 @@
 ---
-title: Marko Idzan
+layout: home
+description: Marko Idžan’s Official Web Site and Portfolio
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="Marko Idžan’s Official Web Site and Portfolio">
-    <!--Open Graph & Twitter Card-->
-    <meta property="og:title" content="Marko Idzan">
-    <meta property="og:site_name" content="Marko Idzan">
-    <meta property="og:url" content="https://idzan.eu/">
-    <meta property="og:description" content="Marko Idžan’s Official Web Site and Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://idzan.eu/img/logo/dark.png">
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:domain" content="idzan.eu">
-    <meta property="twitter:url" content="https://idzan.eu/">
-    <meta name="twitter:site" content="@idzanmarko">
-    <meta name="twitter:title" content="Marko Idzan">
-    <meta name="twitter:description" content="Marko Idžan’s Official Web Site and Portfolio">
-    <meta name="twitter:image" content="https://idzan.eu/img/logo/dark.png">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="shortcut icon" href="favicon/icon.svg" type="image/svg+xml">
-    <!--Fonts Preload-->
-    {% include fonts.html %}
-</head>
-<body>
-    <header>
-        <div class="container row">
-            <button class="nav-toggle" aria-label="open navigation">
-                <span class="hamburger"></span>
-            </button>
-            <div class="site__name">
-                <span class="site__title">Marko</span> <span class="site__title color__accent">Idžan</span>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list nav__list--primary">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
+
         <section id="home">
             <h1>Hello my name is <span class="site__title--heading color__accent">Marko Idžan</span></h1>
             <h2>and I'm Freelance Web Designer and Web Administrator</h2>
@@ -291,38 +246,4 @@ title: Marko Idzan
                 <strong>YouTube</strong> <a href="https://www.youtube.com/channel/UC1E7cbcnFqHEqTYmbZHKDPA" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Idzan Marko</a>
             </p>
         </section>
-    </main>
-    <div class="subfooter">
-        <a class="top hide" id="to-top">
-            <svg class="icon icon__fill--top">
-                <title>To Top</title>
-                <use href="svg/icons.svg#to-top"></use>
-            </svg>
-            <span class="screen-reader" aria-hidden="true">Go To Top</span>
-            <span class="visually-hidden" aria-hidden="true">To Top</span>
-        </a>
-    </div>
-    <footer>
-        {% include social.html %}
-        <div class="user-toggle">
-            <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
-            <button class="button [ toggle-button ] [ js-mode-toggle ]">
-                <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
-                <span class="toggle-button__icon" aria-hidden="true"></span>
-            </button>
-        </div>
-        <div class="gdpr__links">
-            <p>
-                <a href="/privacy.html" class="link__internal">Privacy and Cookie Policy</a>
-                &nbsp;-&nbsp; 
-                <a href="/terms.html" class="link__internal">Terms of Service</a>
-            </p>
-        </div>
-        <div class="copyright__text">
-            <p>Copyright &copy; 2010 - 2021</p>
-        </div>
-    </footer>
-
-    <script src="js/code.js"></script>
-</body>
-</html>
+    

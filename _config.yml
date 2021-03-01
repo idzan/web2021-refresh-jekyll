@@ -1,0 +1,6 @@
+title: Marko Idžan
+baseurl: /
+url: "https://idzan.eu"
+permalink: /:title/
+markdown: kramdown
+timezone: Europe/Zagreb
