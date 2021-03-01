@@ -4,3 +4,6 @@ url: "https://idzan.eu"
 permalink: /:title/
 markdown: kramdown
 timezone: Europe/Zagreb
+
+plugins:
+  - jekyll-responsive-image
