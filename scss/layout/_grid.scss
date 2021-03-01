@@ -1,0 +1,37 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.service__item {
+    display: grid;
+    justify-items: center;
+  }
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project__informations {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project__item {
+    display: grid;
+}

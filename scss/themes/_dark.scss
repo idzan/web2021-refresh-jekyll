@@ -1,0 +1,123 @@
+@import "../utilities/_colors.scss";
+@import "../utilities/_icons.scss";
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-mode: "dark";
+
+        &:not([data-user-color-scheme]) {
+            --dark-blue: #{$dark-blue};
+            --white: #{$white};
+            --darker-white: #{$darker-white};
+            --gray: #{$gray};
+            --orange: #{$orange};
+            --deep-red: #{$deep-red};
+            --green: #{$green};
+            --red: #{$red};
+
+            --background: var(--dark-blue);
+            --text: var(--white);
+            --header: var(--gray);
+            --hamburger: var(--gray);
+            --nav-toggle: var(--darker-white);
+            --nav-toggle-text: var(--gray);
+            --menu-text: var(--white);
+            --link: var(--orange);
+            --button: var(--orange);
+            --button-text: var(--white);
+            --accent: var(--orange);
+            --focus: var(--white);
+            --selection: var(--orange);
+            --selection-text: var(--white);
+            --icon-fill: var(--white);
+            --top: var(--gray);
+
+            --switch-icon: #{$icon-sun};
+            --switch-icon-filter: #{$icon-sun-filter};
+
+            :focus {
+                outline: var(--focus) solid 1px;
+            }
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background: var(--header);
+        }
+
+        ::selection {
+            background: var(--selection);
+            color: var(--selection-text);
+        }
+
+        .hamburger, .hamburger::before, .hamburger::after {
+            background: var(--hamburger);
+        }
+
+        .nav__link {
+            color: var(--menu-text);
+        }
+
+        .nav-toggle {
+            background: var(--nav-toggle);
+            color: var(--nav-toggle-text);
+        }
+        
+        .link__external, .link__internal {
+            color: var(--link);
+        }
+        
+        .color__accent {
+            color: var(--accent);
+        }
+        
+        .button__about, .button__more {
+            background: var(--button);
+            color: var(--button-text);
+        }
+
+        .icon__fill--contact, .icon__fill--project, .icon__fill--top {
+            fill: var(--icon-fill);
+        }
+
+        .top {
+            background: var(--top);
+        }
+
+    }
+}
+
+[data-user-color-scheme="dark"] {
+    --dark-blue: #{$dark-blue};
+    --white: #{$white};
+    --darker-white: #{$darker-white};
+    --gray: #{$gray};
+    --orange: #{$orange};
+    --deep-red: #{$deep-red};
+    --green: #{$green};
+    --red: #{$red};
+
+    --background: var(--dark-blue);
+    --text: var(--white);
+    --header: var(--gray);
+    --hamburger: var(--gray);
+    --nav-toggle: var(--darker-white);
+    --nav-toggle-text: var(--gray);
+    --menu-text: var(--white);
+    --link: var(--orange);
+    --button: var(--orange);
+    --button-text: var(--white);
+    --accent: var(--orange);
+    --focus: var(--white);
+    --selection: var(--orange);
+    --selection-text: var(--white);
+    --icon-fill: var(--white);
+    --top: var(--gray);
+
+    --switch-icon: #{$icon-sun};
+    --switch-icon-filter: #{$icon-sun-filter};
+}

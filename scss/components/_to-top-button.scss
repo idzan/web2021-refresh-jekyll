@@ -1,0 +1,22 @@
+.top {
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+    padding: 0.75rem;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

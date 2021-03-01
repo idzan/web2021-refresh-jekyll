@@ -1,0 +1,29 @@
+* {
+    &:before, &:after {
+        transition: all .5s;
+    }
+}
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    scroll-behavior: smooth;
+
+    &:focus-within {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    transition: background 500ms ease-in-out, color 200ms ease;
+}
+
+main {
+    margin: 2rem;
+}
+
+img, picture {
+    max-width: 100%;
+    height: auto;
+}

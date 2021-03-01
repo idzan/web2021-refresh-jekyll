@@ -1,0 +1,37 @@
+.user-toggle {
+    /* margin: 1em auto 0 auto;
+    padding-top: 1em; */
+    text-align: center;
+}
+
+.toggle-button {
+    display: inline-flex;
+    background: var(--button);
+    color: var(--button-text);
+    border: none;
+    padding: 1em;
+    transition: background 500ms ease-in-out, color 200ms ease;
+
+    :focus {
+        outline: 1px solid var(--button);
+        outline-offset: 0.5em;
+    }
+}
+
+.toggle-button__icon {
+    background: var(--switch-icon);
+    color: var(--button-text);
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 0.5em;
+    filter: var(--switch-icon-filter);
+    transform: translateY(1px);
+    transition: filter 500ms ease-in-out;
+}
+
+@media (max-width: 720px) {
+    .user-toggle {
+        margin: 1em auto 0 auto;
+        padding-top: 1em;
+    }
+}

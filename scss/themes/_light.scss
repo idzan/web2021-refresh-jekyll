@@ -1,0 +1,87 @@
+@import "../utilities/_colors.scss";
+@import "../utilities/_icons.scss";
+
+:root {
+    --color-mode: "light"; 
+
+    --dark-blue: #{$dark-blue};
+    --white: #{$white};
+    --darker-white: #{$darker-white};
+    --gray: #{$gray};
+    --orange: #{$orange};
+    --deep-red: #{$deep-red};
+    --green: #{$green};
+    --red: #{$red};
+
+    --background: var(--white);
+    --text: var(--dark-blue);
+    --header: var(--darker-white);
+    --hamburger: var(--white);
+    --nav-toggle: var(--gray);
+    --nav-toggle-text: var(--white);
+    --menu-text: var(--gray);
+    --link: var(--deep-red);
+    --button: var(--deep-red);
+    --button-text: var(--white);
+    --accent: var(--deep-red);
+    --focus: var(--dark-blue);
+    --selection: var(--dark-blue);
+    --selection-text: var(--white);
+    --icon-fill: var(--dark-blue);
+    --top: var(--darker-white);
+
+    --switch-icon: #{$icon-moon};
+    --switch-icon-filter: #{$icon-moon-filter};
+
+    :focus {
+        outline: var(--focus) solid 1px;
+    }
+}
+
+::selection {
+    background: var(--selection);
+    color: var(--selection-text);
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+header {
+    background: var(--header);
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+        background: var(--hamburger);
+}
+
+.nav-toggle {
+    background: var(--nav-toggle);
+    color: var(--nav-toggle-text);
+}
+
+.nav__link {
+    color: var(--menu-text);
+}
+
+.link__external, .link__internal {
+    color: var(--link);
+}
+
+.color__accent {
+    color: var(--accent);
+}
+
+.button__about, .button__more {
+    background: var(--button);
+    color: var(--button-text);
+}
+
+.icon__fill--contact, .icon__fill--project, .icon__fill--top {
+    fill: var(--icon-fill);
+}
+
+.top {
+    background: var(--top);
+}

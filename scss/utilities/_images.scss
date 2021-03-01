@@ -1,0 +1,19 @@
+.img__svg {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.img__thumbnail--portfolio {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.img__project {
+    max-width: 95vw;
+}
+
+@media (min-width: 720px) {
+    .img__project {
+        max-width: 40vw;
+    }
+}

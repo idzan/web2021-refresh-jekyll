@@ -1,0 +1,21 @@
+/* #home, #about, #services, #portfolio, #blog, #contact {
+    padding: 1rem;
+} */
+
+#home {
+    height: 75vh;
+    padding-bottom: 4rem;
+}
+
+#about {
+    padding-top: 5rem;
+    height: auto;
+}
+
+#about h2, #services h2 {
+    padding-bottom: 1.5rem;
+}
+
+#services, #portfolio, #contact {
+    padding-top: 5rem;
+}
