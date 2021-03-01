@@ -1,0 +1,328 @@
+---
+title: Marko Idzan
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="Marko Idžan’s Official Web Site and Portfolio">
+    <!--Open Graph & Twitter Card-->
+    <meta property="og:title" content="Marko Idzan">
+    <meta property="og:site_name" content="Marko Idzan">
+    <meta property="og:url" content="https://idzan.eu/">
+    <meta property="og:description" content="Marko Idžan’s Official Web Site and Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://idzan.eu/img/logo/dark.png">
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:domain" content="idzan.eu">
+    <meta property="twitter:url" content="https://idzan.eu/">
+    <meta name="twitter:site" content="@idzanmarko">
+    <meta name="twitter:title" content="Marko Idzan">
+    <meta name="twitter:description" content="Marko Idžan’s Official Web Site and Portfolio">
+    <meta name="twitter:image" content="https://idzan.eu/img/logo/dark.png">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/svg+xml">
+    <!--Fonts Preload-->
+    {% include fonts.html %}
+</head>
+<body>
+    <header>
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="site__name">
+                <span class="site__title">Marko</span> <span class="site__title color__accent">Idžan</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Hello my name is <span class="site__title--heading color__accent">Marko Idžan</span></h1>
+            <h2>and I'm Freelance Web Designer and Web Administrator</h2>
+            <a href="#about" class="button button__about">More about me</a>
+        </section>
+        <section id="about">
+            <h2 class="section__title">About me</h2>
+            <p>Marko Idžan is a Croatian Freelance Web Designer & Administrator with experiences in IT Administration. I was born in early September of 1993 and I’m Christian Catholic. Personally, I have couple of hobbies and those are Biking, Photography and Video Production.</p>
+            <p>Education and learning about Computing started in Primary School “Žitnjak” in year 2000. For High School I went to Technical School “Ruđera Boškovića” where I graduated as Computer Technician in 2012. As for College I went to Zagreb University of Applied Sciences in two degrees, from I finished degree in Computing for Bachelor of Technology.</p>
+            <p>I have worked for multiple companies on position of IT Administrator and Web Shop Manager. Those Companies are Gold Deal Ltd. where I started working in November of 2016. In January of 2018 I went to new company Great Choice Ltd., and final company was Global Print Ltd. where I started working in October 2018 and finished working in end of December 2018. Now I'm a Freelance Web Designer.</p>
+            <a href="files/Idzan-Marko-CV.pdf" class="button button__download" role="button">Download my CV</a>
+        </section>
+        <section id="services">
+            <h2 class="section__title">Services & Skills</h2>
+            <div class="service__list">
+                <div class="service__item">
+                    <img class="img__svg" src="svg/web_development.svg" alt="Web Design & Development">
+                    <h3>Web Design & Development</h3>
+                    <p>From designing various Web Sites and Web Shops up to Development of them into final product.</p>
+                </div>
+                <div class="service__item">
+                    <img class="img__svg" src="svg/web_adminstration.svg" alt="Web Administration">
+                    <h3>Web Administration</h3>
+                    <p>Administration of Web Sites and Web Shops on various platforms. I will also do Web Optimizations as well.</p>
+                </div>
+                <div class="service__item">
+                    <img class="img__svg" src="svg/system_administration.svg" alt="System Administration">
+                    <h3>System Administration</h3>
+                    <p>Managing and deploying various operating systems for clients and servers.</p>
+                </div>
+                <div class="service__item">
+                    <img class="img__svg" src="svg/social_management.svg" alt="Social Media Management">
+                    <h3>Social Media Management</h3>
+                    <p>Managing and updating Social Media Platforms and Advertising on them.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <div class="portfolio__grid">
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/zupa-petrusevec.avif">
+                        <source type="image/webp" srcset="img/portfolio/zupa-petrusevec.webp">
+                        <img src="img/portfolio/zupa-petrusevec.jpg" alt="Parish of St. Vitus, Petrusevec - Zagreb">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Parish of St. Vitus, Petrusevec – Zagreb” Web Site</h3>
+                        <a href="project/zupa-petrusevec.html" class="button button__more" role="button">View project</a>
+                    </div>
+                    
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/simun-emanuel.avif">
+                        <source type="image/webp" srcset="img/portfolio/simun-emanuel.webp">
+                        <img src="img/portfolio/simun-emanuel.jpg" alt="Šimun Emanuel Travels">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Šimun Emanuel Travels” Web Site</h3>
+                        <a href="project/simun-emanuel.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/zupa-vrapce.avif">
+                        <source type="image/webp" srcset="img/portfolio/zupa-vrapce.webp">
+                        <img src="img/portfolio/zupa-vrapce.jpg" alt="Parish of St. Barbara’s, Vrapce – Zagreb">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Parish of St. Barbara’s, Vrapce – Zagreb” Web Site</h3>
+                        <a href="project/zupa-vrapce.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/hocunamore.avif">
+                        <source type="image/webp" srcset="img/portfolio/hocunamore.webp">
+                        <img src="img/portfolio/hocunamore.jpg" alt="Hoću na more (hocunamore.hr)">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Hoću na more (hocunamore.hr)” Web Site</h3>
+                        <a href="project/hocunamore.html" class="button button__more" role="button">View project</a>
+                    </div> 
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/kursiljo.avif">
+                        <source type="image/webp" srcset="img/portfolio/kursiljo.webp">
+                        <img src="img/portfolio/kursiljo.jpg" alt="Kursiljo Croatia">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Kursiljo Croatia” Web Site</h3>
+                        <a href="project/kursiljo.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/nekretnina.avif">
+                        <source type="image/webp" srcset="img/portfolio/nekretnina.webp">
+                        <img src="img/portfolio/nekretnina.jpg" alt="“Nekretnina.hr">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Nekretnina.hr” Web Site</h3>
+                        <a href="project/nekretnina.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/mybar.avif">
+                        <source type="image/webp" srcset="img/portfolio/mybar.webp">
+                        <img src="img/portfolio/mybar.jpg" alt="MyBar.hr">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“MyBar.hr” Web Shop</h3>
+                        <a href="project/mybar.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/maskice.avif">
+                        <source type="image/webp" srcset="img/portfolio/maskice.webp">
+                        <img src="img/portfolio/maskice.jpg" alt="Maskice.hr">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Maskice.hr” Web Shop</h3>
+                        <a href="project/maskice.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/tiskara.avif">
+                        <source type="image/webp" srcset="img/portfolio/tiskara.webp">
+                        <img src="img/portfolio/tiskara.jpg" alt="Tiskara.hr">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Tiskara.hr” Web Shop</h3>
+                        <a href="project/tiskara.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/marko93-gaming.avif">
+                        <source type="image/webp" srcset="img/portfolio/marko93-gaming.webp">
+                        <img src="img/portfolio/marko93-gaming.jpg" alt="Marko93 Gaming">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Marko93 Gaming” Web Site</h3>
+                        <a href="project/marko93gaming.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <picture class="img__thumbnail--portfolio">
+                        <source type="image/avif" srcset="img/portfolio/svijetogledala.avif">
+                        <source type="image/webp" srcset="img/portfolio/svijetogledala.webp">
+                        <img src="img/portfolio/svijetogledala.jpg" alt="Svijet Ogledala">
+                    </picture>
+                    <div class="project__item--details">
+                        <h3 class="project__item--title">“Svijet Ogledala” Web Site</h3>
+                        <a href="project/svijetogledala.html" class="button button__more" role="button">View project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <p>If you want to contact me you can use mail linked below or other medias for communication which are linked here.</p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>Email Address</title>
+                    <use href="svg/icons.svg#envelope"></use>
+                </svg>
+                &nbsp;
+                <strong>Email</strong> <a href="mailto:marko@idzan.eu" class="link__external">marko@idzan.eu</a>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>Phone number</title>
+                    <use href="svg/icons.svg#mobile"></use>
+                </svg>
+                &nbsp;
+                <strong>Phone</strong> +385 (0)92 1996 272 
+                <br>
+                <span class="text__muted">Number is available on &nbsp;
+                    <svg class="icon icon__fill--contact">
+                        <title>WhatsApp</title>
+                        <use href="svg/icons.svg#whatsapp"></use>
+                    </svg>
+                    <a href="https://wa.me/385921996272" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">WhatsApp</a>, &nbsp;
+                    <svg class="icon icon__fill--contact">
+                        <title>Viber</title>
+                        <use href="svg/icons.svg#viber"></use>
+                    </svg>
+                    <a href="viber://chat?number=385921996272" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Viber</a> &nbsp;
+                    and 
+                    <svg class="icon icon__fill--contact">
+                        <title>Telegram</title>
+                        <use href="svg/icons.svg#telegram"></use>
+                    </svg>
+                    <a href="https://t.me/idzanmarko" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Telegram</a>.
+                </span>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>Facebook</title>
+                    <use href="svg/icons.svg#facebook"></use>
+                </svg>
+                &nbsp;
+                <strong>Facebook</strong> <a href="https://facebook.com/Idzan.Marko.Official" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Idzan Marko</a>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>Twitter</title>
+                    <use href="svg/icons.svg#twitter"></use>
+                </svg>
+                &nbsp;
+                <strong>Twitter</strong> <a href="https://twitter.com/idzanmarko" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Marko Idžan</a>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>LinkedIn</title>
+                    <use href="svg/icons.svg#linkedin"></use>
+                </svg>
+                &nbsp;
+                <strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/markoidzan/" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Marko Idžan</a>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>Instagram</title>
+                    <use href="svg/icons.svg#instagram"></use>
+                </svg>
+                &nbsp;
+                <strong>Instagram</strong> <a href="https://www.instagram.com/idzan.marko.official/" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Marko Marko</a>
+            </p>
+            <p>
+                <svg class="icon icon__fill--contact">
+                    <title>YouTube</title>
+                    <use href="svg/icons.svg#youtube"></use>
+                </svg>
+                &nbsp;
+                <strong>YouTube</strong> <a href="https://www.youtube.com/channel/UC1E7cbcnFqHEqTYmbZHKDPA" target="_blank" rel="noopener noreferrer" class="link__external"  title="Opens in new tab">Idzan Marko</a>
+            </p>
+        </section>
+    </main>
+    <div class="subfooter">
+        <a class="top hide" id="to-top">
+            <svg class="icon icon__fill--top">
+                <title>To Top</title>
+                <use href="svg/icons.svg#to-top"></use>
+            </svg>
+            <span class="screen-reader" aria-hidden="true">Go To Top</span>
+            <span class="visually-hidden" aria-hidden="true">To Top</span>
+        </a>
+    </div>
+    <footer>
+        {% include social.html %}
+        <div class="user-toggle">
+            <div role="status" class="[ visually-hidden ][ js-mode-status ]"></div>
+            <button class="button [ toggle-button ] [ js-mode-toggle ]">
+                <span class="[ toggle-button__text ] [ js-mode-toggle-text ]">Enable dark mode</span>
+                <span class="toggle-button__icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="gdpr__links">
+            <p>
+                <a href="/privacy.html" class="link__internal">Privacy and Cookie Policy</a>
+                &nbsp;-&nbsp; 
+                <a href="/terms.html" class="link__internal">Terms of Service</a>
+            </p>
+        </div>
+        <div class="copyright__text">
+            <p>Copyright &copy; 2010 - 2021</p>
+        </div>
+    </footer>
+
+    <script src="js/code.js"></script>
+</body>
+</html>
